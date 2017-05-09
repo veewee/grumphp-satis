@@ -1,0 +1,11 @@
+satis:
+    image: ypereirareis/docker-satis:4.0
+    environment: 
+        CRONTAB_FREQUENCY: -1
+    volumes:
+        - ./satis.json:/app/config.json
+        # If this does not work: replace with the absolute path to your user directory
+        - "~/.composer:/root/.composer"
+    ports:
+        - 3333:3000
+        - 9000:80

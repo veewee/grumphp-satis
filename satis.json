@@ -1,0 +1,27 @@
+{
+    "name": "Grumphp demo Repository",
+    "homepage": "http://127.0.0.1:9000",
+    "minimum-stability": "dev",
+    "repositories": [
+      { "type": "composer", "url": "http://packagist.org/" }
+    ],
+
+    "archive": {
+        "prefix-url": "http://127.0.0.1:9000",
+        "directory": "dist",
+        "format": "tar",
+        "skip-dev": true
+    },
+
+    "require-all": false,
+    "require-dependencies": true,
+    "require-dev-dependencies": false,
+    "require": {
+        "phpro/grumphp": "0.11.4",
+        "phpspec/phpspec": "3.2.3",
+        "squizlabs/php_codesniffer": "2.8.0"
+    },
+
+    "output-dir": "public",
+    "output-html": true
+}
