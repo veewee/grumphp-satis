@@ -1,13 +1,13 @@
 {
-    "name": "Grumphp demo Repository",
-    "homepage": "http://127.0.0.1:9000",
+    "name": "veewee/grumphp-satis-demo",
+    "homepage": "http://127.0.0.1:8000",
     "minimum-stability": "dev",
     "repositories": [
-      { "type": "composer", "url": "http://packagist.org/" }
+      { "type": "composer", "url": "https://packagist.org/" }
     ],
 
     "archive": {
-        "prefix-url": "http://127.0.0.1:9000",
+        "prefix-url": "http://127.0.0.1:8000",
         "directory": "dist",
         "format": "tar",
         "skip-dev": true
@@ -17,9 +17,9 @@
     "require-dependencies": true,
     "require-dev-dependencies": false,
     "require": {
-        "phpro/grumphp": "0.11.4",
-        "phpspec/phpspec": "3.2.3",
-        "squizlabs/php_codesniffer": "2.8.0"
+        "phpro/grumphp-shim": "1.13",
+        "phpunit/phpunit": "9.5.24",
+        "friendsofphp/php-cs-fixer": "3.11.0"
     },
 
     "output-dir": "public",
